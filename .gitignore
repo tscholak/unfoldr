@@ -1,0 +1,12 @@
+.travis.yml
+*.py[cod]
+*.so
+*.egg-info
+*.h5
+*.nb
+*.c
+build
+tests
+scratch
+.ipynb_checkpoints
+.DS_Store
