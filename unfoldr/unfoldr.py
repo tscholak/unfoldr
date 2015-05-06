@@ -269,9 +269,6 @@ class Unfoldr(object):
                   callback=self.results.extend)
     p.join()
 
-    for result in self.results:
-      print result
-
   def _process(self, task):
     '''
     Process a task.
@@ -343,7 +340,6 @@ class Unfoldr(object):
     try:
       out_f = h5py.File(self.options.out_file, 'w')
       for result in self.results:
-        print result.processed_data.spacings.shape
         out_f.create_dataset(str(result.processed_data.slice),
                              data=_convert_to_dtype(np.array([result.processed_data.spacings],
                                                              dtype=object).transpose(),
