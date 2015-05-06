@@ -22,6 +22,11 @@ unfoldr uses the [setuptools](https://pypi.python.org/pypi/setuptools). From wit
 ```
 python setup.py install
 ```
+Make sure your Python's `bin` directory is in your `$PATH`. On Mac OS X, if you use Macports and haven't done so already, add
+```
+export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+```
+to your `~/.bash_login` or `~/.bash_profile` file.
 
 ## Usage
 unfoldr reads input files one-by-one and processes them in parallel. The output file is written to once at the end of the program. The data in the output file can be analyzed statistically with [histogramr](https://github.com/tscholak/histogramr).
