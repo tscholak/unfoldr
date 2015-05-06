@@ -93,7 +93,7 @@ class Unfoldr(object):
     result = re.match(r'('+scinot+')?,('+scinot+')?$', string)
     if not result:
       raise argparse.ArgumentTypeError("'" + string + "' is not a valid range of numbers. "
-                                       "Expected are forms like '0-1', '0-', or '-1'. "
+                                       "Expected are forms like '0,1', '0,', or ',1'. "
                                        "Numbers have to be expressed in the scientific notation.")
     start = float(result.group(1) or -sys.float_info.max)
     end = float(result.group(2) or sys.float_info.max)
