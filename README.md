@@ -17,8 +17,8 @@ unfoldr has been tested with Python 2.7 on 64-bit Linux and Mac OS X. It require
 $ git clone git@github.com:tscholak/unfoldr.git
 ```
 
-### Setting up histogramr
-unfoldr uses the setuptools. From within the source code directory, run:
+### Setting up unfoldr
+unfoldr uses the [setuptools](https://pypi.python.org/pypi/setuptools). From within the source code directory, run:
 ```
 python setup.py install
 ```
