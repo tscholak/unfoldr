@@ -22,7 +22,7 @@ cpdef np.ndarray[np.float64_t] _process_sorted_eigval(np.ndarray[np.float64_t] e
 
   i = 0
   for j in range(l_eigval):
-    while unfolding_pool[i] <= eigval[j]:
+    while unfolding_pool[i] < eigval[j]:
       i += 1
       if i >= l_unfolding_pool:
         break
