@@ -4,8 +4,16 @@ unfoldr
 unfolding and nearest-neighbor level spacings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Given the eigenvalues of an ensemble of random matrices, unfoldr
+calculates the nearest-neighbor level spacings of the unfolded spectrum,
+either as a whole or for *slices* of it. You can specify how you want to
+cut the spectrum into slices — linearly, logarithmically —, and unfoldr
+will calculate the level spacings for each slice individually. With this
+you can study how the level spacing statistics change with energy and
+whether or not there is a phase transition in the spectrum.
+
 Check out `this blog
-post <http://tscholak.github.io/code/physics/2015/05/06/unfoldr.html>`__
+post <http://tscholak.github.io/code/physics/2015/05/05/unfoldr.html>`__
 for more details.
 
 Current status
@@ -17,8 +25,11 @@ Installation
 ------------
 
 unfoldr has been tested with Python 2.7 on 64-bit Linux and Mac OS X. It
-requires the following packages: \* `NumPy <http://www.numpy.org>`__ \*
-`h5py <http://www.h5py.org>`__ \* `Cython <http://cython.org>`__
+requires the following packages:
+
+-  `NumPy <http://www.numpy.org>`__
+-  `h5py <http://www.h5py.org>`__
+-  `Cython <http://cython.org>`__
 
 Obtaining the source code
 ~~~~~~~~~~~~~~~~~~~~~~~~~
